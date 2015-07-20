@@ -1,0 +1,1901 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Приложения.files/filelist.xml">
+<title>Приложения</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Sergey</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Sergey</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>22</o:TotalTime>
+  <o:Created>2002-05-29T16:17:00Z</o:Created>
+  <o:LastSaved>2002-05-29T16:20:00Z</o:LastSaved>
+  <o:Pages>14</o:Pages>
+  <o:Words>3157</o:Words>
+  <o:Characters>17997</o:Characters>
+  <o:Company>HOME</o:Company>
+  <o:Lines>149</o:Lines>
+  <o:Paragraphs>35</o:Paragraphs>
+  <o:CharactersWithSpaces>22101</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b>Основы алгебры
+логики<o:p></o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>Приложения<o:p></o:p></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<h1><a name=App1></a>Приложение 1. Основные типы переменных</h1>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>TLogElementOp</span> = (<span lang=EN-US
+style='mso-ansi-language:EN-US'>loNone</span>, <span lang=EN-US
+style='mso-ansi-language:EN-US'>loOr</span>, <span lang=EN-US style='mso-ansi-language:
+EN-US'>loAnd</span>, <span lang=EN-US style='mso-ansi-language:EN-US'>loNot</span>,
+<span lang=EN-US style='mso-ansi-language:EN-US'>loImplic</span>, <span
+lang=EN-US style='mso-ansi-language:EN-US'>loEcviv</span>); определяет тип
+логической операции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>TLogOper</span> = <span lang=EN-US
+style='mso-ansi-language:EN-US'>record</span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>i</span>1, <span lang=EN-US style='mso-ansi-language:
+EN-US'>i</span>2 : <span lang=EN-US style='mso-ansi-language:EN-US'>PLogOper;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>lo : TLogElementOp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>c1, c2 : String[1];<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>end</span>;</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'>Используется для описания ветвей динамического
+дерева, полученного в результате рекурсивного разбиения функции. <span
+lang=EN-US style='mso-ansi-language:EN-US'>i</span>1, <span lang=EN-US
+style='mso-ansi-language:EN-US'>i</span>2 – указатели на дочерние ветви
+логической операции (для логического отрицания используется только лишь <span
+lang=EN-US style='mso-ansi-language:EN-US'>i</span>1). <span lang=EN-US
+style='mso-ansi-language:EN-US'>lo</span> – тип логической операции. <span
+lang=EN-US style='mso-ansi-language:EN-US'>c</span>1, <span lang=EN-US
+style='mso-ansi-language:EN-US'>c</span>2 – символьные переменные, которые
+заменяют соответственно <span lang=EN-US style='mso-ansi-language:EN-US'>i</span>1
+и <span lang=EN-US style='mso-ansi-language:EN-US'>i</span>2 в том случае, если
+они указывают не на логическую операцию, а на логическую переменную.</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>PLogOper</span> = ^<span lang=EN-US
+style='mso-ansi-language:EN-US'>TLogOper</span>; - указатель на динамическую
+структуру</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>TInputsArr</span> = <span lang=EN-US
+style='mso-ansi-language:EN-US'>array</span>[1..6] <span lang=EN-US
+style='mso-ansi-language:EN-US'>of</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>Boolean</span>; - массив, содержащий
+значения логических переменных.</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>TIOArr = array [0..MaxColCount-1,
+0..MaxRowCount] of Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>TNaborElement = (neFalse, neTrue, neNone); //
+0, 1, -<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>TNabor = record<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Element : array[0..MaxInputCount-1] of
+TNaborElement; // набор<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Cut : Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>TJarus = record<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>NaborCount : Integer; // число наборов<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.4pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Nabor : array[1..100*MaxInputCount] of<span
+style="mso-spacerun: yes">  </span>TNabor;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>TBiNabor = array[0..MaxInputCount] of TJarus;
+// Двоичный набор ярусов<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:247.8pt'>// Индекс массива - число единиц</p>
+
+<p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h1><a name=App2></a>Приложение 2. Рекурсивная функция для разбиения текстовой
+функции</h1>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>function DivFunc(WorkStr : String) : Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>function GetVal(C : Char) : Integer;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>Case
+C of<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'=' : Result := 5;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'&gt;' : Result := 4;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'+' : Result := 3;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'•' : Result := 2;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>'¬'
+: Result := 1;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>else Result := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>i, rp
+: Integer;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>function DivFunc(WorkStr : String) : Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>function GetVal(C : Char) : Integer;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>Case
+C of<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'=' : Result := 5;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'&gt;' : Result := 4;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'+' : Result := 3;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'•' : Result := 2;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>'¬' : Result := 1;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>else Result := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>i, rp
+: Integer;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>function Recurse(Str : String; ParNode : PLogOper; uv : Integer; var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>err
+: Boolean) : PLogOper;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>i, suv,
+suvmin, uvo, uvc, maxval, maxvaln, val, divi : Integer;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>LOper : PLogOper;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>i1Str, i2Str : String[250];<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>rerr
+: Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>err
+:= False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>LOper := nil;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>suv
+:= uv; suvmin := 0; uvc := 0; uvo := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>maxval := 0; maxvaln := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>For
+i := 1 to Length(Str) do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>If
+Str[i]='(' then Inc(suv); // </span>Подсчет<span style='mso-ansi-language:EN-US'>
+</span>уровня<span style='mso-ansi-language:EN-US'> </span>вложенности<span
+style='mso-ansi-language:EN-US'> </span>скобок<span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>If
+Str[i]=')' then Dec(suv); //<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>Case Str[i] of<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>'•', '¬', '+', '&gt;', '=' :<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>If (suvmin=0) or (suv &lt; suvmin) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span></span>begin</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">              </span>suvmin := suv; // Для данного уровня вложенности ищем</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">              </span>uvc := 1;<span style="mso-spacerun: yes">     
+</span>// операцию наивысшего приоритета</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">              </span>uvo := i;<span style="mso-spacerun: yes">     
+</span>// т. е. которая будет выполняться последней</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">             </span><span style="mso-spacerun: yes"> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>maxval := GetVal(Str[i]);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>maxvaln := i;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end else if suv=suvmin then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>Inc(uvc);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>// + -&gt; • -&gt; ¬<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>// 3<span style="mso-spacerun: yes">    </span>2<span
+style="mso-spacerun: yes">    </span>1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>Val := GetVal(Str[i]);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>if val&gt;maxval then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>maxval := val;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>maxvaln := i;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span></span>end;</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">    </span>If maxvaln=0 then maxvaln := uvo; // Нашли операцию наивысшего
+приоритета</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">    </span>divi := maxvaln;<span style="mso-spacerun:
+yes">                  </span>// и делим функцию</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">    </span><span lang=EN-US style='mso-ansi-language:EN-US'>If
+(uvc&lt;&gt;0) or ((uv=1) and (uvc=0)) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>LOper := New(PLogOper);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>With LOper^ do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>ParLOper := ParNode;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>If divi=0 then lo := loNone else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">        </span></span>Case
+Str[divi] of // Определние логической операции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span><span lang=EN-US style='mso-ansi-language:EN-US'>'+' : lo
+:= loOr;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>'•' : lo := loAnd;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>'¬' : lo := loNot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>'&gt;' : lo := loImplic;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>'=' : lo := loEcviv;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>else lo := loNone;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">        </span>If
+(lo = loNot) or (lo = loNone) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">        </span></span>begin</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span>i1Str := CopyE(Str, divi+1); // выделение строковой
+функции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span>i2Str := '';<span style="mso-spacerun:
+yes">                 </span>// после знака операции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">        </span>end else</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">        </span>begin</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span>i1Str := CopyB(Str, divi-1); // выделение строковой
+функции до и</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span>i2Str := CopyE(Str, divi+1); // после знака операции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">        </span><span lang=EN-US style='mso-ansi-language:EN-US'>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>If lo = loImplic then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>// A&gt;B -&gt; A+(¬B)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>Result := Recurse( i1Str+'+(¬'+i2Str+')', ParNode, uv, err);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span><span
+style="mso-spacerun: yes">        </span>Exit;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>end else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>If lo = loEcviv then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>// A=B -&gt; (¬A•¬B) + (A•B)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>Result := Recurse( '(¬'+i1Str+'•¬'+i2Str+')+('+i1Str+'•'+i2Str+')',<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>ParNode, uv, err);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>Exit;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>end else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span><span
+style="mso-spacerun: yes">    </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>rerr := False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>If Length(i1Str)&gt;1 then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>i1 := Recurse(i1Str, LOper, uv+1, rerr); // </span>Рекурсивный<span
+style='mso-ansi-language:EN-US'> </span>анализ<span style='mso-ansi-language:
+EN-US'> </span>дальше<span lang=EN-US style='mso-ansi-language:EN-US'>...<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>If rerr then Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>end else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>i1 := nil; // .. </span>или<span style='mso-ansi-language:EN-US'> </span>это<span
+style='mso-ansi-language:EN-US'> </span>переменная<span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>If ('A'&lt;=i1Str) and (i1Str&lt;=Chr(Ord('A')+InputCount-1)) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>c1 := i1Str else Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>If (not rerr) and (lo &lt;&gt; loNot) and (lo &lt;&gt; loNone) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       </span><span
+style="mso-spacerun: yes">     </span>If Length(i2Str)&gt;1 then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>i2 := Recurse(i2Str, LOper, uv+1, rerr); // </span>Рекурсивный<span
+style='mso-ansi-language:EN-US'> </span>анализ<span style='mso-ansi-language:
+EN-US'> </span>дальше<span lang=EN-US style='mso-ansi-language:EN-US'>...<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>If rerr then Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>i2 := nil; // .. </span>или<span style='mso-ansi-language:EN-US'> </span>это<span
+style='mso-ansi-language:EN-US'> </span>переменная<span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>If ('A'&lt;=i2Str) and (i2Str&lt;=Chr(Ord('A')+InputCount-1)) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>c2 := i2Str else Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>LOList.Add(LOper);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>Result := LOper;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Result
+:= False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>i :=
+1; rp := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>While
+i&lt;=Length(WorkStr) do // </span>Удаление<span style='mso-ansi-language:EN-US'>
+</span>лишних<span style='mso-ansi-language:EN-US'> </span>пробелов<span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+WorkStr[i]='=' then If rp=0 then rp := i;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+WorkStr[i] = ' ' then Delete(WorkStr, i, 1) else Inc(i);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>WorkStr := Copy(WorkStr, rp+1, Length(WorkStr)-rp+1);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>Recurse(WorkStr, nil, 1, Result);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Result
+:= not Result;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>If not
+Result then MessageBox(TTForm.Handle, PChar('</span>Ошибка<span
+style='mso-ansi-language:EN-US'> </span>анализа<span style='mso-ansi-language:
+EN-US'> </span>формулы<span lang=EN-US style='mso-ansi-language:EN-US'> !'#13+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>'X='+WorkStr), '</span>Таблица<span style='mso-ansi-language:EN-US'> </span>истинности<span
+lang=EN-US style='mso-ansi-language:EN-US'>', mb_Ok or MB_ICONERROR);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>function Recurse(Str : String; ParNode : PLogOper; uv : Integer; var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>err
+: Boolean) : PLogOper;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>i,
+suv, suvmin, uvo, uvc, maxval, maxvaln, val, divi : Integer;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>LOper : PLogOper;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>i1Str, i2Str : String[250];<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>rerr
+: Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>err
+:= False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>LOper := nil;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>suv
+:= uv; suvmin := 0; uvc := 0; uvo := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>maxval := 0; maxvaln := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>For
+i := 1 to Length(Str) do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>If
+Str[i]='(' then Inc(suv); // </span>Подсчет<span style='mso-ansi-language:EN-US'>
+</span>уровня<span style='mso-ansi-language:EN-US'> </span>вложенности<span
+style='mso-ansi-language:EN-US'> </span>скобок<span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>If
+Str[i]=')' then Dec(suv); //<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   </span><span
+style="mso-spacerun: yes">   </span>Case Str[i] of<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>'•', '¬', '+', '&gt;', '=' :<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>If (suvmin=0) or (suv &lt; suvmin) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span></span>begin</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">              </span>suvmin := suv; // Для данного уровня вложенности ищем</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">              </span>uvc := 1;<span style="mso-spacerun: yes">     
+</span>// операцию наивысшего приоритета</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">              </span>uvo := i;<span style="mso-spacerun: yes">     
+</span>// т. е. которая будет выполняться последней</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">              </span><span lang=EN-US style='mso-ansi-language:EN-US'>maxval
+:= GetVal(Str[i]);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>maxvaln := i;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end else if suv=suvmin then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>Inc(uvc);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>// + -&gt; • -&gt; ¬<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>// 3<span style="mso-spacerun: yes">    </span>2<span
+style="mso-spacerun: yes">    </span>1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>Val := GetVal(Str[i]);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>if val&gt;maxval then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>maxval := val;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>maxvaln := i;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   </span><span
+style="mso-spacerun: yes"> </span></span>end;</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">    </span>If maxvaln=0 then maxvaln := uvo; // Нашли операцию наивысшего
+приоритета</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">    </span>divi := maxvaln;<span style="mso-spacerun:
+yes">                  </span>// и делим функцию</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">    </span><span lang=EN-US style='mso-ansi-language:EN-US'>If
+(uvc&lt;&gt;0) or ((uv=1) and (uvc=0)) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>LOper := New(PLogOper);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>With LOper^ do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>ParLOper := ParNode;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>If divi=0 then lo := loNone else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">        </span></span>Case
+Str[divi] of // Определние логической операции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span><span lang=EN-US style='mso-ansi-language:EN-US'>'+' : lo
+:= loOr;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>'•' : lo := loAnd;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>'¬' : lo := loNot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>'&gt;' : lo := loImplic;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> </span><span
+style="mso-spacerun: yes">         </span>'=' : lo := loEcviv;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>else lo := loNone;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>If (lo = loNot) or (lo = loNone) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">        </span></span>begin</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span>i1Str := CopyE(Str, divi+1); // выделение строковой
+функции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span>i2Str := '';<span style="mso-spacerun:
+yes">                 </span>// после знака операции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">        </span>end else</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">        </span>begin</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span>i1Str := CopyB(Str, divi-1); // выделение строковой
+функции до и</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">          </span>i2Str := CopyE(Str, divi+1); // после знака операции</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">        </span><span lang=EN-US style='mso-ansi-language:EN-US'>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>If lo = loImplic then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     </span><span
+style="mso-spacerun: yes">     </span>// A&gt;B -&gt; A+(¬B)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>Result := Recurse( i1Str+'+(¬'+i2Str+')', ParNode, uv, err);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>Exit;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>end else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>If lo = loEcviv then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>// A=B -&gt; (¬A•¬B) + (A•B)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>Result := Recurse( '(¬'+i1Str+'•¬'+i2Str+')+('+i1Str+'•'+i2Str+')',<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>ParNode, uv, err);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>Exit;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>end else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>rerr := False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>If Length(i1Str)&gt;1 then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>i1 := Recurse(i1Str, LOper, uv+1, rerr); // </span>Рекурсивный<span
+style='mso-ansi-language:EN-US'> </span>анализ<span style='mso-ansi-language:
+EN-US'> </span>дальше<span lang=EN-US style='mso-ansi-language:EN-US'>...<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>If rerr then Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>end else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>i1 := nil; // .. </span>или<span style='mso-ansi-language:EN-US'> </span>это<span
+style='mso-ansi-language:EN-US'> </span>переменная<span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>If ('A'&lt;=i1Str) and (i1Str&lt;=Chr(Ord('A')+InputCount-1)) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>c1 := i1Str else Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">        
+</span><span style="mso-spacerun: yes"> </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>If (not rerr) and (lo &lt;&gt; loNot) and (lo &lt;&gt; loNone) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>If Length(i2Str)&gt;1 then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>i2 := Recurse(i2Str, LOper, uv+1, rerr); // </span>Рекурсивный<span
+style='mso-ansi-language:EN-US'> </span>анализ<span style='mso-ansi-language:
+EN-US'> </span>дальше<span lang=EN-US style='mso-ansi-language:EN-US'>...<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>If rerr then Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>i2 := nil; // .. </span>или<span style='mso-ansi-language:EN-US'> </span>это<span
+style='mso-ansi-language:EN-US'> </span>переменная<span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>If ('A'&lt;=i2Str) and (i2Str&lt;=Chr(Ord('A')+InputCount-1)) then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>c2 := i2Str else Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> </span><span
+style="mso-spacerun: yes">       </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>LOList.Add(LOper);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>Result := LOper;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Result
+:= False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>i :=
+1; rp := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>While
+i&lt;=Length(WorkStr) do // </span>Удаление<span style='mso-ansi-language:EN-US'>
+</span>лишних<span style='mso-ansi-language:EN-US'> </span>пробелов<span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+WorkStr[i]='=' then If rp=0 then rp := i;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If WorkStr[i]
+= ' ' then Delete(WorkStr, i, 1) else Inc(i);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>WorkStr := Copy(WorkStr, rp+1, Length(WorkStr)-rp+1);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>Recurse(WorkStr, nil, 1, Result);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Result
+:= not Result;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>If not
+Result then MessageBox(TTForm.Handle, PChar('</span>Ошибка<span
+style='mso-ansi-language:EN-US'> </span>анализа<span style='mso-ansi-language:
+EN-US'> </span>формулы<span lang=EN-US style='mso-ansi-language:EN-US'> !'#13+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>'X='+WorkStr), '</span>Таблица<span style='mso-ansi-language:EN-US'> </span>истинности<span
+lang=EN-US style='mso-ansi-language:EN-US'>', mb_Ok or MB_ICONERROR);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'>end;</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:27.0pt'>Приложение
+3</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:27.0pt'>Вычисление
+значения логической функции для составления таблицы истинности с использованием
+информации динамически созданного &quot;дерева&quot;</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>function EvaluateFunc(Inputs : TInputsArr) :
+Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Err :
+Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>function GetInput(Str : String) : Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+('A'&lt;=Str) and (Str&lt;'F') then Result :=<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>Inputs[ Ord(Str[1])-Ord('A')+1 ] else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>Result := False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>Err := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>function Recurse(Node : PLogOper) : Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>O1,
+O2 : Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+Node^.i1 = nil then O1 := GetInput(Node^.C1) else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>O1
+:= Recurse(Node^.i1);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+((Node^.lo = loNot) or (Node^.lo = loNone)) then O2 := False else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>If
+Node^.i2 = nil then O2 := GetInput(Node^.C2) else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>O2 := Recurse(Node^.i2);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>Case
+Node^.lo of<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>loAnd : Result := O1 and O2; // •<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>loOr<span style="mso-spacerun: yes">  </span>: Result := O1 or<span
+style="mso-spacerun: yes">  </span>O2; // +<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>loNot : Result := not O1;<span style="mso-spacerun: yes">    </span>// ¬<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>else Result := O1;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   </span><span
+style="mso-spacerun: yes"> </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Err :=
+False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Result
+:= False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>If
+LOList.Count &gt; 0 then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>Result := Recurse(LOList.Last);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>If Err
+then MessageBox(TTForm.Handle, '</span>Ошибка<span style='mso-ansi-language:
+EN-US'> </span>анализа<span style='mso-ansi-language:EN-US'> </span>формулы<span
+lang=EN-US style='mso-ansi-language:EN-US'> !',<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>'</span>Таблица<span
+style='mso-ansi-language:EN-US'> </span>истинности<span lang=EN-US
+style='mso-ansi-language:EN-US'>', mb_Ok or MB_ICONERROR);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:27.0pt'>Приложение
+4</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:27.0pt'>Составление
+МДНФ, СДНФ, СКНФ</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>function GetMDNF(IOArr : TIOArr) : String;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>function GetNE(InputBool : Boolean) : TNaborElement;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+InputBool then Result := neTrue else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>Result := neFalse;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>function GetStrNE(InputNE : TNaborElement) : String;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+InputNE=neTrue<span style="mso-spacerun: yes">  </span>then Result := '1' else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>If
+InputNE=neFalse then Result := '0' else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>Result := '-';<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>var<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>C, R,
+TC, ji, dji, t, ni, ni1, ni2, cdn, nei, nedi : Integer;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span></span>//
+Номер яруса и наборов 1-го и 2-го яруса</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun: yes"> 
+</span><span lang=EN-US style='mso-ansi-language:EN-US'>ne</span> : <span
+lang=EN-US style='mso-ansi-language:EN-US'>Integer</span>;<span
+style="mso-spacerun: yes">  </span>// Конец набора (для вывода)</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun: yes"> 
+</span><span lang=EN-US style='mso-ansi-language:EN-US'>TStr : String;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Null :
+Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>BiNabor, BiNabor2 : TBiNabor;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Ok,
+dOk : Boolean;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>Null
+:= True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>FillChar(BiNabor, SizeOf(BiNabor), 0);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes"> 
+</span>FillChar(BiNabor2, SizeOf(BiNabor2), 0);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>With
+TTForm do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>For</span><span
+lang=EN-US> </span><span lang=EN-US style='mso-ansi-language:EN-US'>R</span> :=
+0 <span lang=EN-US style='mso-ansi-language:EN-US'>to</span><span lang=EN-US> </span><span
+lang=EN-US style='mso-ansi-language:EN-US'>RowCount</span>-1 <span lang=EN-US
+style='mso-ansi-language:EN-US'>do</span> // Подготовка бинарного набора</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">    </span><span lang=EN-US style='mso-ansi-language:EN-US'>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>If
+IOArr[InputCount, R] then // Функция истинна<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>Null := False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>TC</span> := 0; // Обнуление счетчика истин</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">        </span><span lang=EN-US style='mso-ansi-language:EN-US'>For C := 0
+to InputCount-1 do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>If IOArr[C, R] then Inc(TC);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>Inc(BiNabor[TC].NaborCount);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>For C := 0 to InputCount-1 do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>BiNabor[TC].Nabor[BiNabor[TC].NaborCount].Element[C] :=<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>GetNE(IOArr[C, R]);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">    </span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   
+</span>repeat<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">  </span><span
+style="mso-spacerun: yes">    </span>Ok := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>ji
+:= 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>//<span style="mso-spacerun: yes">     
+</span>For ji := 0 to InputCount-1 do // Число ярусов = InputCount+1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>While ji &lt;= InputCount-1 do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>ni1 := 1;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>//<span style="mso-spacerun: yes">       
+</span>For ni1 := 1 to BiNabor[ji].NaborCount do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>While ni1 &lt;= BiNabor[ji].NaborCount do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>ni2 := 1;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>//<span style="mso-spacerun: yes">         
+</span>For ni2 := 1 to BiNabor[ji+1].NaborCount do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>While ni2 &lt;= BiNabor[ji+1].NaborCount do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>cdn := 0; nedi := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>nei := 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>//<span style="mso-spacerun: yes">           
+</span>For nei := 0 to InputCount-1 do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>While nei &lt;= InputCount-1 do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>if BiNabor[ji].Nabor[ni1].Element[nei] &lt;&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun:
+yes">                 </span>BiNabor[ji+1].Nabor[ni2].Element[nei] then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>Inc(cdn);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">   </span><span
+style="mso-spacerun: yes">             </span>nedi := nei;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>Inc(nei);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>If</span><span lang=EN-US> </span><span lang=EN-US style='mso-ansi-language:
+EN-US'>cdn</span>=1 <span lang=EN-US style='mso-ansi-language:EN-US'>then</span>
+// Если одно различие -&gt; склеивание</p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">            </span><span lang=EN-US style='mso-ansi-language:EN-US'>If
+((BiNabor[ji].Nabor[ni1].Element[nedi]=neFalse) and<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun:
+yes">                  </span>(BiNabor[ji+1].Nabor[ni2].Element[nedi]=neTrue))
+or<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun:
+yes">                 </span>((BiNabor[ji].Nabor[ni1].Element[nedi]=neTrue) and<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun:
+yes">                  </span>(BiNabor[ji+1].Nabor[ni2].Element[nedi]=neFalse))
+then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>begin<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>Ok := False;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>Inc(BiNabor2[ji].NaborCount);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>For nei := 0 to InputCount-1 do<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>BiNabor2[ji].Nabor[BiNabor2[ji].NaborCount].Element[nei] :=<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">               
+</span>BiNabor[ji].Nabor[ni1].Element[nei];<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>BiNabor2[ji].Nabor[BiNabor2[ji].NaborCount].Element[nedi] := neNone;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>BiNabor[ji].Nabor[ni1].Cut := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">             
+</span>BiNabor[ji+1].Nabor[ni2].Cut := True;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">           
+</span>Inc(ni2);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">         
+</span>Inc(ni1);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">       
+</span>Inc(ji);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>end;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">      </span>If
+not Ok then<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><span style="mso-spacerun: yes">     
+</span>begin</span></p>
+
+<p class=MsoNormal style='text-indent:27.0pt'><span style="mso-spacerun:
+yes">        </span><span lang=EN-US style='mso-ansi-language:EN-US'>For<

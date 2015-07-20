@@ -1,0 +1,1110 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Readme.files/filelist.xml">
+<link rel=Edit-Time-Data href="./Readme.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Элементы алгебры логики</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Sergey</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Sergey</o:LastAuthor>
+  <o:Revision>27</o:Revision>
+  <o:TotalTime>112</o:TotalTime>
+  <o:LastPrinted>2002-03-16T19:02:00Z</o:LastPrinted>
+  <o:Created>2002-05-29T15:56:00Z</o:Created>
+  <o:LastSaved>2002-05-29T19:41:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1271</o:Words>
+  <o:Characters>7248</o:Characters>
+  <o:Company>HOME</o:Company>
+  <o:Lines>60</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>8901</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:AutoHyphenation/>
+  <w:HyphenationZone>17</w:HyphenationZone>
+  <w:DoNotHyphenateCaps/>
+  <w:DrawingGridHorizontalSpacing>9,35 пт</w:DrawingGridHorizontalSpacing>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:15.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:28.05pt;
+	mso-pagination:widow-orphan;
+	font-size:15.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:45.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:27.0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:51.05pt 1.0cm 51.05pt 79.4pt;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:329991126;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1627608386 723187058 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:46.05pt;
+	mso-level-number-position:left;
+	margin-left:46.05pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:669871180;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-475658106 68747265 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:64.05pt;
+	mso-level-number-position:left;
+	margin-left:64.05pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:804195785;
+	mso-list-type:hybrid;
+	mso-list-template-ids:175013388 68747265 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:64.05pt;
+	mso-level-number-position:left;
+	margin-left:64.05pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1297954387;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1514219122 68747265 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:64.05pt;
+	mso-level-number-position:left;
+	margin-left:64.05pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1424299664;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1300282580 1219102794 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l4:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:46.05pt;
+	mso-level-number-position:left;
+	margin-left:46.05pt;
+	text-indent:-18.0pt;}
+@list l5
+	{mso-list-id:1790539773;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-322267392 1863719186 1458852664 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l5:level1
+	{mso-level-tab-stop:46.05pt;
+	mso-level-number-position:left;
+	margin-left:46.05pt;
+	text-indent:-18.0pt;}
+@list l5:level2
+	{mso-level-text:"%2\)";
+	mso-level-tab-stop:82.05pt;
+	mso-level-number-position:left;
+	margin-left:82.05pt;
+	text-indent:-18.0pt;}
+@list l6
+	{mso-list-id:1877237783;
+	mso-list-type:hybrid;
+	mso-list-template-ids:335979356 -938727490 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l6:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:46.05pt;
+	mso-level-number-position:left;
+	margin-left:46.05pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1040"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoBodyText align=center style='text-align:center;text-indent:28.05pt'><b><span
+style='font-size:14.0pt;mso-bidi-font-size:12.0pt'>Элементы алгебры логики<o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:46.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level1 lfo2;tab-stops:list 46.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Readme.htm#Intro">Введение</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:46.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level1 lfo2;tab-stops:list 46.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Readme.htm#Startwork">Этапы работы с программой</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:82.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level2 lfo2;tab-stops:list 82.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Readme.htm#Step1">Ввод логической функции в текстовом виде</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:82.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level2 lfo2;tab-stops:list 82.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Readme.htm#Step2">Составление таблицы истинности</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:82.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level2 lfo2;tab-stops:list 82.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Readme.htm#Step3">Составление СДНФ, СКНФ и МДНФ</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:82.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level2 lfo2;tab-stops:list 82.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Readme.htm#Step4">Построение логической схемы</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:82.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level2 lfo2;tab-stops:list 82.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'>Редактирование логической схемы<o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:46.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level1 lfo2;tab-stops:list 46.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Readme.htm#Outro">Выводы</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:46.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level1 lfo2;tab-stops:list 46.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Readme.htm#Example">Пример получения МДНФ</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='margin-left:46.05pt;text-align:left;
+text-indent:-18.0pt;mso-list:l5 level1 lfo2;tab-stops:list 46.05pt'><![if !supportLists]><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'><a href="Приложения.htm">Приложения</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='text-indent:65.5pt'><b><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>1) <a href="Приложения.htm#App1">Приложение 1
+(основные типы переменных)</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='text-indent:65.5pt'><b><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>2) <a href="Приложения.htm#App2">Приложение 2
+(основные функции)</a><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='text-align:left;text-indent:28.05pt'><b><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoBodyText align=left style='text-align:left;text-indent:28.05pt'><a
+name=Intro></a><b><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>1.
+Введение<o:p></o:p></span></b></p>
+
+<p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>Данная программа написана в среде программирования </span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-US'>Borland</span><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'> </span><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt;mso-ansi-language:EN-US'>Delphi</span><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'> 6 на языке </span><span lang=EN-US
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>Object</span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> </span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-US'>Pascal</span><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>.
+Проект состоит из двух основных частей – самой программы (7 основных модулей) и
+библиотеки компонентов (7 дополнительных модулей).<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>Для работы необходим компьютер с установленной
+операционной системой </span><span lang=EN-US style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>Microsoft</span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> </span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-US'>Windows</span><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>
+95/98/</span><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;
+mso-ansi-language:EN-US'>NT</span><span style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'>/</span><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt;mso-ansi-language:EN-US'>ME</span><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>/2000/</span><span lang=EN-US style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>XP</span><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>При написании программы были использованы
+стандартные компоненты библиотеки </span><span lang=EN-US style='font-size:
+13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>Borland</span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> </span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-US'>VCL</span><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> (</span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-US'>Visual</span><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'> </span><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt;mso-ansi-language:EN-US'>component</span><span lang=EN-US
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> </span><span lang=EN-US
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>library</span><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>) и на их основе были
+построены новые компоненты специально для программы.<o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>Программа занимает не много места на диске (621 Кб),
+не требовательна к системным ресурсам, а также для своей работы не требует
+каких-либо специальных библиотек (как например, программы, написанные на </span><span
+lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+EN-US'>Visual</span><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt'> </span><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+12.0pt;mso-ansi-language:EN-US'>Basic</span><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>). Все измененные параметры настройки сохраняются. <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>Программа предназначена для изучения отдельных
+вопросов алгебры логики, а более конкретно для <b><i>построения минимальной
+дизъюнктивной нормальной формы.</i> </b>Кроме того, программа обеспечивает<b> <i>построение
+логической схемы для сложной логической функции</i></b>. <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+mso-bidi-font-size:12.0pt'>Основное ее назначение – обучающая программа. <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:6.0pt;text-indent:28.05pt'><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:6.0pt;text-indent:28.05pt'><span
+style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>Раздел «элементы алгебры
+логики» в курсе информатики школ, техникумов и вузов является достаточно
+сложным для изучения и требует при его рассмотрении большей наглядности.
+Представляемая программа отчасти решает эту проблему. <o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:6.0pt;text-indent:28.05pt'><a
+name=Startwork></a><b><i><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>2.
+Работа программы происходит следующим образом.<o:p></o:p></span></i></b></p>
+
+<table border=0 cellspacing=0 cellpadding=0 width=760 style='width:569.95pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=760 valign=top style='width:569.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='margin-top:6.0pt;text-indent:28.05pt'><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+   o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+   stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:264pt;
+   height:105pt'>
+   <v:imagedata src="./Readme.files/image001.gif" o:title="Step1"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=352 height=140
+  src="./Readme.files/image001.gif" v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:6.0pt;text-indent:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>1) На первом этапе
+  пользова<a name=Step1></a>тель <b><i>задает текстовую логическую функцию</i></b>
+  с использованием следующих обозначений:<o:p></o:p></span></p>
+  <p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>&quot;+&quot;<span style="mso-spacerun: yes"> 
+  </span>–<span style="mso-spacerun: yes">  </span>дизъюнкция;<o:p></o:p></span></p>
+  <p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>&quot;*&quot; или &quot;&amp;&quot;<span
+  style="mso-spacerun: yes">  </span>–<span style="mso-spacerun: yes"> 
+  </span>конъюнкция;<o:p></o:p></span></p>
+  <p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>&quot;</span><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+  mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+  Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&Oslash;</span></span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>&quot;<span
+  style="mso-spacerun: yes">  </span>– отрицание (&quot;-&quot; на клавиатуре);<o:p></o:p></span></p>
+  <p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>&quot;&gt;&quot; – импликация;<o:p></o:p></span></p>
+  <p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>&quot;=&quot; – эквиваленция.<o:p></o:p></span></p>
+  <p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>Кроме того, логическая функция может содержать
+  скобки.<span style="mso-spacerun: yes">  </span>Максимальное количество
+  логических переменных – 6.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;text-indent:
+  28.05pt'><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>Для
+  введенных логических функций проводится проверка на корректность. Если
+  введена некорректная функция, выводится сообщение об ошибке.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=760 valign=top style='width:569.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='margin-top:6.0pt;text-indent:28.05pt'><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+   style='width:292.5pt;height:244.5pt'>
+   <v:imagedata src="./Readme.files/image002.gif" o:title="Step2"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=390 height=326
+  src="./Readme.files/image002.gif" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:6.0pt;text-indent:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>2) На втором этапе для
+  введенной логической функции программа с<a name=Step2></a>оставляет <b><i>таблицу
+  истинности</i></b>.<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:6.0pt;text-indent:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>Для этого был реализован
+  алгоритм &quot;обратных приоритетов&quot;: функция рекурсивно разбивается на
+  части.<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:6.0pt;text-indent:18.7pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>Рекурсивная функция (</span><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'>DivFunc</span><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>)
+  состоит из нескольких основных частей (см. Приложение 2):<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:46.05pt;text-indent:-18.0pt;mso-list:l0 level1 lfo4;
+  tab-stops:list 46.05pt'><![if !supportLists]><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Определение операции с наименьшим приоритетом (с учетом скобок)<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:46.05pt;text-indent:-18.0pt;mso-list:l0 level1 lfo4;
+  tab-stops:list 46.05pt'><![if !supportLists]><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Выделение в текстовой функции в зависимости от операции одной или
+  двух частей, например, для функции <sub><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+   type="#_x0000_t75" style='width:43.5pt;height:12pt'>
+   <v:imagedata src="./Readme.files/image003.gif" o:title="Formula1"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=58 height=16
+  src="./Readme.files/image003.gif" v:shapes="_x0000_i1027"><![endif]></sub><span
+  style="mso-spacerun: yes"> </span>операцией с наименьшим приоритетом будет
+  сложение и соответственно функция будет разделена на две части: <sub><!--[if gte vml 1]><v:shape
+   id="_x0000_i1028" type="#_x0000_t75" style='width:23.25pt;height:12pt'>
+   <v:imagedata src="./Readme.files/image004.gif" o:title="Formula2"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=31 height=16
+  src="./Readme.files/image004.gif" v:shapes="_x0000_i1028"><![endif]></sub>и </span><i><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'>C</span></i><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>.<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:46.05pt;text-indent:-18.0pt;mso-list:l0 level1 lfo4;
+  tab-stops:list 46.05pt'><![if !supportLists]><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Рекурсивный вызов функции если полученные части не отдельные
+  переменные<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:6.0pt;text-indent:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>При этом все промежуточные
+  результаты заносятся в специальные динамические структуры. В результате получается
+  &quot;дерево&quot;, ветвями которого являются отдельные логические операции.
+  На основе полученного дерева производится расчет значений функции при всех
+  возможных значениях переменных, и составляется таблица истинности. Это
+  делается с помощью функции </span><span lang=EN-US style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>EvaluateFunc</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> (см. Приложение 4).
+  Сначала производится расчет для начальной ветви динамического дерева :<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:46.05pt;text-indent:-18.0pt;mso-list:l6 level1 lfo6;
+  tab-stops:list 46.05pt'><![if !supportLists]><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Определяется тип логической операции<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:46.05pt;text-indent:-18.0pt;mso-list:l6 level1 lfo6;
+  tab-stops:list 46.05pt'><![if !supportLists]><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Определяются составные части логической функции. Если это другие
+  логические функции, то производится рекурсивный расчет для этой функции иначе
+  определяется значение логической переменной<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:46.05pt;text-indent:-18.0pt;mso-list:l6 level1 lfo6;
+  tab-stops:list 46.05pt'><![if !supportLists]><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>В зависимости от логической функции рассчитывается значение функции
+  при данных значениях переменных<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:28.05pt'><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Все эти операции производятся для всех возможных значений переменных<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=760 valign=top style='width:569.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText style='margin-top:6.0pt;text-indent:28.05pt'><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75"
+   style='width:272.25pt;height:153.75pt'>
+   <v:imagedata src="./Readme.files/image005.gif" o:title="Step3"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=363 height=205
+  src="./Readme.files/image005.gif" v:shapes="_x0000_i1029"><![endif]><o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:6.0pt;text-indent:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>3) На третьем этапе по
+  таблице истинности составляет<a name=Step3></a>ся любая форма – по выбору
+  пользователя – СДНФ (</span><span lang=EN-US style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>GetSDNF</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>; совершенная
+  дизъюнктивная нормальная форма), или СКНФ (</span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>GetSCNF</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>; совершенная
+  конъюнктивная нормальная форма), или МДНФ –<span style="mso-spacerun: yes"> 
+  </span>минимальная дизъюнктивная нормальная форма. Создание МДНФ происходит
+  поэтапно по <b><i>методу Квайна-МакКласски.</i></b> Это позволяет
+  прослеживать преобразования логической функции на экране компьютера.<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent><i><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Метод состоит из четырех шагов:<o:p></o:p></span></i></p>
+  <p class=MsoBodyTextIndent style='margin-left:64.05pt;text-indent:-18.0pt;
+  mso-list:l1 level1 lfo8;tab-stops:list 64.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Представим наборы, на которых функция истинна, в виде двоичных
+  эквивалентов<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:64.05pt;text-indent:-18.0pt;
+  mso-list:l1 level1 lfo8;tab-stops:list 64.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Упорядочим двоичные эквиваленты по ярусам и проведем склейку наборов
+  в соседних ярусах, получая максимальные интервалы до тех пор, пока это
+  возможно; помечаем каждый набор, участвовавший в склейке. Склеиваются только
+  те наборы или интервалы, различие в которых заключается в значении одного
+  разряда:<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-top:6.0pt;text-indent:65.5pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>001<span style='mso-tab-count:
+  2'>                   </span>001-<span style='mso-tab-count:2'>               </span>-01-<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-bottom:6.0pt;text-indent:65.5pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>000<span style='mso-tab-count:
+  2'>                   </span>101-<span style='mso-tab-count:2'>               </span>-11-<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:64.05pt;text-indent:-18.0pt;
+  mso-list:l2 level1 lfo10;tab-stops:list 64.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Поглощение повторяющихся наборов<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:64.05pt;text-indent:-18.0pt;
+  mso-list:l2 level1 lfo10;tab-stops:list 64.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Составление функции в виде бинарного набора<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:63.8pt;text-indent:-17.85pt;mso-list:l2 level1 lfo10;
+  tab-stops:list 64.05pt'><![if !supportLists]><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Составление функции в текстовом виде<o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:45.95pt'><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Данный алгоритм выполняет функция </span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>GetMDNF</span><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> </span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>(см. Приложение 4)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=760 valign=top style='width:569.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;text-align:justify;text-indent:
+  28.05pt'><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;
+  mso-ansi-language:EN-US'><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+   type="#_x0000_t75" style='width:411pt;height:354pt'>
+   <v:imagedata src="./Readme.files/image006.gif" o:title="Step4"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=548 height=472
+  src="./Readme.files/image006.gif" v:shapes="_x0000_i1030"><![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;text-align:justify;text-indent:
+  28.05pt'><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>4) На
+  четвертом этапе программа производ<a name=Step4></a>ит <b><i>построение
+  логической схемы </i></b>на основе построенного нового дерева. При
+  необходимости построение логической схемы может производиться для любой
+  введенной пользователем функции.<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Программа имеет простой и удобный редактор, предназначенный для
+  создания и редактирования логических схем. Для работы редактора логических
+  схем была построена объектная модель, содержащая компоненты:<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:46.05pt;text-indent:-18.0pt;
+  mso-list:l4 level1 lfo12;tab-stops:list 46.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>TlogEdit</span><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'> – наследник </span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>TEdit</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> – обрабатывает нажатия
+  клавиш:<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>Автоматически заменяет
+  символы<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>&quot;*&quot;, &quot;&amp;&quot;
+  на &quot;•&quot; - знак дизъюнкции<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>&quot;|&quot; на
+  &quot;+&quot;<span style="mso-spacerun: yes">  </span>- знак конъюнкции<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>&quot;-&quot; на
+  &quot;¬&quot; - логическое отрицание<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>Также имеет ограничение на
+  вводимые символы - можно вводить лишь :<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>1) Обозначения логической
+  функции - X, Y, Z<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>2) Знаки логических
+  функций, скобки<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>3) Обозначения переменных
+  - A, B, C, D, E, F<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:46.05pt;text-indent:-18.0pt;
+  mso-list:l4 level1 lfo12;tab-stops:list 46.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>TLogMemo</span><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'> – наследник </span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>TMemo</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> - используется для вывода
+  промежуточных результатов во время упрощения функции<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:46.05pt;text-indent:-18.0pt;
+  mso-list:l4 level1 lfo12;tab-stops:list 46.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>TLogEntry</span><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'> – наследник </span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>TGraphicControl</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> – основа для логических
+  элементов содержит объявления виртуальных базовых функций Evaluate, </span><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'>GetLogUr</span><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>
+  и GetCoordsIO<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:46.05pt;text-indent:-18.0pt;
+  mso-list:l4 level1 lfo12;tab-stops:list 46.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>TDragShape</span><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'> – наследник </span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>TLogEntry</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> – содержит процедуры
+  перемещения графических объектов посредством </span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>Drag</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>-</span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>and</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>-</span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>Drop</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>.<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:46.05pt;text-indent:-18.0pt;
+  mso-list:l4 level1 lfo12;tab-stops:list 46.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>TLogElement</span><span style='font-size:
+  13.0pt;mso-bidi-font-size:12.0pt'> – логический элемент. Содержит процедуры
+  рисования и расчета значения логической функции, а также функции соединения
+  посредством компонента </span><span lang=EN-US style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>TLogConnect</span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>.<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:46.05pt;text-indent:-18.0pt;
+  mso-list:l4 level1 lfo12;tab-stops:list 46.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>6)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>TLogConnect</span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> </span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>– наследник </span><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'>TClass</span><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>
+  – предназначен для хранения информации о соединениях между логическими
+  элементами. Реализован алгоритм растягивающихся соединений<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:46.05pt;text-indent:-18.0pt;
+  mso-list:l4 level1 lfo12;tab-stops:list 46.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>7)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>TLogFuncElem</span><span style='font-size:
+  13.0pt;mso-bidi-font-size:12.0pt'> – наследник </span><span lang=EN-US
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>TLogElement</span><span
+  lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:12.0pt'> </span><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>– это элемент - логическая
+  функция<o:p></o:p></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:46.05pt;text-indent:-18.0pt;
+  mso-list:l4 level1 lfo12;tab-stops:list 46.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>8)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span lang=EN-US style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>TLogIn</span><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'> – компонент – логический вход<o:p></o:p></span></p>
+  <p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoBodyText style='text-indent:28.05pt'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>Созданная логическая схема сохраняется в файле и в
+  дальнейшем может использоваться пользователем. При необходимости логическую
+  схему можно выводить на печать. <o:p></o:p></span></p>
+  <p class=MsoBodyText style='margin-bottom:6.0pt;text-indent:28.05pt'><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>Предусмотрены и обратные
+  действия – по созданной в редакторе логической схемы программа составляет
+  логическую функцию и таблицу истинности.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=760 valign=top style='width:569.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:46.05pt;text-align:justify;text-indent:-18.0pt;mso-list:
+  l6 level1 lfo6;tab-stops:list 46.05pt'><![if !supportLists]><b><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></b><![endif]><b><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Редактирование логической схемы<o:p></o:p></span></b></p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:28.05pt;text-align:justify'><span style='font-size:13.0pt;
+  mso-bidi-font-size:12.0pt'>Также пользователь может самостоятельно собирать
+  логическую схему, используя логические компоненты. Схему можно собирать как с
+  самого начала, так и редактировать готовую. <o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:64.05pt;text-align:justify;text-indent:-18.0pt;mso-list:
+  l3 level1 lfo13;tab-stops:list 64.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Чтобы добавить логический элемент в схему необходимо сначала нажать
+  левой кнопкой мыши на кнопку в окне &quot;Элементы алгебры логики&quot; с
+  соответствующим обозначением элемента и затем отпустить. После этого нажмите
+  левой кнопкой в рабочей области окна &quot;Редактор логических схем&quot;.
+  После этого в окне появится новый логический элемент.<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:64.05pt;text-align:justify;text-indent:-18.0pt;mso-list:
+  l3 level1 lfo13;tab-stops:list 64.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Чтобы удалить логический элемент необходимо нажать на него левой
+  кнопкой мыши и в выпадающем списке выбрать &quot;Удалить&quot;<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:64.05pt;text-align:justify;text-indent:-18.0pt;mso-list:
+  l3 level1 lfo13;tab-stops:list 64.05pt'><![if !supportLists]><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><![endif]><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Чтобы соединить логические элементы необходимо нажать на область
+  соединения первого логического элемента, затем не отпуская переместить
+  указатель мыши до соединителя второго элемента и отпустить.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=760 valign=top style='width:569.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:
+  6.0pt;margin-left:0cm;text-align:justify;text-indent:28.05pt'><b><span
+  style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>3.<a name=Outro></a>
+  Выводы<i>: </i></span></b><span style='font-size:13.0pt;mso-bidi-font-size:
+  12.0pt'>Используя эти возможности, программу можно применять для решения
+  задач алгебры логики – упрощения логических функций, анализа логических схем
+  и других на уроках информатики, а также факультативных занятиях, поскольку
+  некоторые рассматриваемые вопросы выходят за рамки школьной программы.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText style='margin-bottom:6.0pt;text-indent:28.05pt'><a
+name=Example></a><b><span style='font-size:13.0pt;mso-bidi-font-size:12.0pt'>4.
+Пример получения МДНФ<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.05pt'>Найти МНДФ
+функции <span lang=EN-US style='mso-ansi-language:EN-US'>F</span>(<span
+lang=EN-US style='mso-ansi-language:EN-US'>x</span>1,<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>2,<span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span>3), которая принимает единичные значения на наборах <br>
+0, 2, 4, 6 и 7.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.05pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div align=center>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:126.95pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:13.5pt'><i><span
+  lang=EN-US style='mso-ansi-language:EN-US'>x</span></i>1 <i><span lang=EN-US
+  style='mso-ansi-language:EN-US'>x</span></i>2 <i><span lang=EN-US
+  style='mso-ansi-language:EN-US'>x</span></i>3</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'><span
+  lang=EN-US style='mso-ansi-language:EN-US'>F</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>0
+  0 0</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>0
+  0 1</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>0</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>0
+  1 0</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>0
+  1 1</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>0</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1
+  0 0</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1
+  0 1</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>0</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1
+  1 0</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=100 valign=top style='width:74.8pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1
+  1 1</p>
+  </td>
+  <td width=112 valign=top style='width:84.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-top:3.0pt;margin-right:0cm;
+  margin-bottom:3.0pt;margin-left:0cm;text-align:center;text-indent:28.05pt'>1</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.05pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.05pt;line-height:
+150%'>СДНФ = <span style='mso-text-raise:-5.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:232.5pt;height:13.5pt'>
+ <v:imagedata src="./Readme.files/image007.gif" o:title="Formula3"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=310 height=18
+src="./Readme.files/image007.gif" v:shapes="_x0000_i1031"><![endif]></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.05pt;line-height:
+150%'>Упорядочим двоичные наборы по ярусам и проведем склейку.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.05pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div align=center>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:98.9pt;
+ border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=116 valign=top style='width:87.25pt;border:none;border-bottom:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>0 0 0 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;<span style='mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'>&Ouml;</span></span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.25pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>0 – 0 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;</span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'><b>- - 0<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=116 valign=top style='width:87.25pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>0 1 0 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;<span style='mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'>&Ouml;</span></span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.25pt;border:none;border-bottom:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>- 0 0 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;</span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=116 valign=top style='width:87.25pt;border:none;border-bottom:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>1 0 0 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;<span style='mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'>&Ouml;</span></span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.25pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>- 1 0 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;</span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=116 valign=top style='width:87.25pt;border:none;border-bottom:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>1 1 0 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;<span style='mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'>&Ouml;<span style='mso-char-type:symbol;
+  mso-symbol-font-family:Symbol'>&Ouml;</span></span></span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.25pt;border:none;border-bottom:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>1 – 0 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;</span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=116 valign=top style='width:87.25pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'>1 1 1 <span style='font-family:
+  Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+  mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+  symbol;mso-symbol-font-family:Symbol'>&Ouml;</span></span></p>
+  </td>
+  <td width=116 valign=top style='width:87.25pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'><b>1 1 -<o:p></o:p></b></p>
+  </td>
+  <td width=116 valign=top style='width:87.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  3.0pt;margin-left:0cm;text-indent:28.05pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;text-indent:28.05pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:28.05pt'>В результате склейки у нас получилось
+всего два максимальных интервала: {11-, --0}. Очевидно, что они образуют
+минимальное покрытие, т.к. удаление любого из этих интервалов приведет к потере
+наборов, на которых функция <span lang=EN-US style='mso-ansi-language:EN-US'>F</span>(<span
+lang=EN-US style='mso-ansi-language:EN-US'>x</span>1,<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>2,<span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span>3) истинна.</p>
+
+<p class=MsoNormal align=center style='margin-top:6.0pt;text-align:center;
+text-indent:28.05pt;line-height:150%'>МДНФ = <span style='mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:48.75pt;height:13.5pt'>
+ <v:imagedata src="./Readme.files/image008.gif" o:title="Formula4"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=65 height=18
+src="./Readme.files/image008.gif" v:shapes="_x0000_i1032"><![endif]></span></p>
+
+</div>
+
+</body>
+
+</html>

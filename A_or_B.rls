@@ -1,0 +1,48 @@
+[Main]
+LogEdit=X=A+B
+LogEditRes=X = B + A
+RowCount=7
+InputCount=3
+OutputCount=1
+LogUrRes=X = B + A
+LECount=2
+CCount=3
+
+[Lines]
+Line1=0 0 0 0
+Line2=0 0 1 0
+Line3=0 1 0 1
+Line4=0 1 1 1
+Line5=1 0 0 1
+Line6=1 0 1 1
+Line7=1 1 0 1
+Line8=1 1 1 1
+
+[LFE]
+Left=352
+Top=251
+NumbId=4
+
+[LE2]
+Left=272
+Top=241
+NumbId=5
+LogElementOp=1
+
+[Connector0]
+NumbId1=5
+IO1=0
+NumbId2=2
+IO2=2
+
+[Connector1]
+NumbId1=5
+IO1=1
+NumbId2=1
+IO2=2
+
+[Connector2]
+NumbId1=4
+IO1=0
+NumbId2=5
+IO2=2

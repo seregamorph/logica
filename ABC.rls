@@ -1,0 +1,78 @@
+[Main]
+LogEdit=X=A+B•(¬C)
+LogEditRes=X = A + B•¬C
+RowCount=7
+InputCount=3
+OutputCount=1
+LogUrRes=X=(A+(B•(¬C)))
+LECount=4
+CCount=6
+
+[Lines]
+Line1=0 0 0 0
+Line2=0 0 1 0
+Line3=0 1 0 1
+Line4=0 1 1 0
+Line5=1 0 0 1
+Line6=1 0 1 1
+Line7=1 1 0 1
+Line8=1 1 1 1
+
+[LFE]
+Left=364
+Top=175
+NumbId=4
+
+[LE2]
+Left=124
+Top=285
+NumbId=5
+LogElementOp=3
+
+[LE3]
+Left=204
+Top=225
+NumbId=6
+LogElementOp=2
+
+[LE4]
+Left=284
+Top=165
+NumbId=7
+LogElementOp=1
+
+[Connector0]
+NumbId1=5
+IO1=0
+NumbId2=3
+IO2=2
+
+[Connector1]
+NumbId1=6
+IO1=0
+NumbId2=2
+IO2=2
+
+[Connector2]
+NumbId1=6
+IO1=1
+NumbId2=5
+IO2=2
+
+[Connector3]
+NumbId1=7
+IO1=0
+NumbId2=1
+IO2=2
+
+[Connector4]
+NumbId1=7
+IO1=1
+NumbId2=6
+IO2=2
+
+[Connector5]
+NumbId1=4
+IO1=0
+NumbId2=7
+IO2=2
